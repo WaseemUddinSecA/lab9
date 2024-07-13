@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="lab9.css">
+</head>
+<body>
+    <header>
+        <h1>Car Gallery</h1>
+    </header>
+
+    <section id="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="sport">Sports Cars</button>
+        <button data-filter="classic">Classic Cars</button>
+    </section>
+
+    <section id="gallery">
+        <div class="image sport"><img src="https://supercarblondie.com/wp-content/uploads/Untitled-design-24-1.webp" alt="Sports Car"></div>
+        <div class="image classic"><img src="https://cdn.aarp.net/content/dam/aarp/auto/2017/02/1140-classic-car-safety.jpg" alt="Classic Car"></div>
+        <div class="image Luxury"><img src="https://ydnews.in/wp-content/uploads/2021/07/rolls-royce-image-818x490.jpg" alt="Luxury Car"></div>
+        <!-- Add more images with appropriate categories -->
+    </section>
+
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lab9.js"></script>
+</body>
+</html>
